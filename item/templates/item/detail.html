@@ -17,6 +17,11 @@
                         <button class="w-full rounded-full bg-gray-900 px-4 py-2 font-bold text-white hover:bg-gray-800 dark:bg-gray-600 dark:hover:bg-gray-700">Delete Item</button>
                     </a>
                     </div>
+                    <div class="w-1/2 px-2">
+                        <a href="{% url 'item:edit' item.id %}">
+                            <button class="w-full rounded-full bg-gray-200 px-4 py-2 font-bold text-gray-800 hover:bg-gray-300 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600">Edit</button>
+                        </a>
+                    </div>
                 {% else %}
                     <div class="w-1/2 px-2">
                     {% comment %} <a href="{% url 'conversation:new' item.id %}"> {% endcomment %}
