@@ -15,6 +15,15 @@
             </p>
         </div>
         <div class="mt-5">
+            {% if messages %}
+                <div class="text-red-600 mb-4">
+                    <ul>
+                        {% for message in messages %}
+                            <li>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
             <!-- Form -->
             <form method="post" action=".">
                 {% csrf_token %}

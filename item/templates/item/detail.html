@@ -24,9 +24,10 @@
                     </div>
                 {% else %}
                     <div class="w-1/2 px-2">
-                    {% comment %} <a href="{% url 'conversation:new' item.id %}"> {% endcomment %}
-                    <a href="{% url 'conversation:new' item.id %}">
-                        <button class="w-full rounded-full bg-sky-600 px-4 py-2 font-bold text-white hover:bg-gray-800 dark:bg-sky-600 dark:hover:bg-gray-700">Contact Seller</button>
+                    <a href="{% url 'conversation:new' item.id %}" class="items-center">
+                        <button class="w-full lg:w-80 rounded-full bg-sky-600 px-4 py-2 font-bold text-white hover:bg-gray-800 dark:bg-sky-600 dark:hover:bg-gray-700">Contact Seller</button>
+
+                        {% comment %} <button class="w-full lg:w-64 rounded-full bg-sky-600 px-4 py-2 font-bold text-white hover:bg-gray-800 dark:bg-sky-600 dark:hover:bg-gray-700">Contact Seller</button> {% endcomment %}
                     </a>
                     </div>
                 {% endif %}

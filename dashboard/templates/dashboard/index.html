@@ -3,10 +3,21 @@
 {% block title %}Dashboard{% endblock %}
 
 {% block content %}
-    <div class="mt-6 px-6 py-12 rounded-xl">
-        <h2 class="mb-12 text-2xl text-center font-bold text-gray-800 dark:text-sky">Related Items</h2>
+    <div class="flex justify-center items-start">
+        <div class="p-5 rounded text-center text-gray-500 max-w-sm">
+            <img class="w-32 h-32 rounded-full mx-auto" src="https://i.pinimg.com/originals/91/2c/e1/912ce19bfeadb1e9e2b7cee8f0a4f1bc.jpg" alt="">
+            <div class="text-sm mt-5">
+                <a href="#" class="font-medium leading-none text-gray-900 hover:text-indigo-600 transition duration-500 ease-in-out">{{ user.username }}</a>
+                <p>{{ user.email }}</p>
+                <p>Joined: {{ user.date_joined }}</p> 
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="rounded-xl">
+        <h1 class="mt-6 text-2xl text-center font-bold text-gray-800 dark:text-sky">Your Items</h1>
 
-        <div class="grid grid-cols-3 gap-3">
+        <div class="mt-5 grid grid-cols-3 gap-3">
             {% for item in items %}
                 <div>
                     <a href="{% url 'item:detail' item.id %}">
