@@ -25,7 +25,7 @@
                 {% else %}
                     <div class="w-1/2 px-2">
                     {% comment %} <a href="{% url 'conversation:new' item.id %}"> {% endcomment %}
-                    <a href="#">
+                    <a href="{% url 'conversation:new' item.id %}">
                         <button class="w-full rounded-full bg-sky-600 px-4 py-2 font-bold text-white hover:bg-gray-800 dark:bg-sky-600 dark:hover:bg-gray-700">Contact Seller</button>
                     </a>
                     </div>
