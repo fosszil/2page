@@ -24,3 +24,38 @@ pip install -r requirements.txt
 
 # Run Django development server
 python manage.py runserver
+
+```
+
+## File Structure
+```
+├───conversation
+│   ├───migrations
+│   │   └───__pycache__
+│   ├───templates
+│   │   └───conversation
+│   └───__pycache__
+├───core
+│   ├───migrations
+│   │   └───__pycache__
+│   ├───static
+│   ├───templates
+│   │   └───core
+│   └───__pycache__
+├───dashboard
+│   ├───migrations
+│   │   └───__pycache__
+│   ├───templates
+│   │   └───dashboard
+│   └───__pycache__
+├───item
+│   ├───migrations
+│   │   └───__pycache__
+│   ├───templates
+│   │   └───item
+│   └───__pycache__
+├───media
+│   └───item_images
+└───mproj
+    └───__pycache__
+```
