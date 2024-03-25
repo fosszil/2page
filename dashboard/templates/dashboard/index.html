@@ -15,9 +15,10 @@
     </div>
     <hr>
     <div class="rounded-xl">
+        
+        {% if items %}
         <h1 class="mt-6 text-2xl text-center font-bold text-gray-800 dark:text-sky">Your Items</h1>
-
-        <div class="mt-5 grid grid-cols-3 gap-3">
+    <div class="mt-5 grid grid-cols-3 gap-3">
             {% for item in items %}
                 <div>
                     <a href="{% url 'item:detail' item.id %}">
@@ -32,6 +33,10 @@
                     </a>
                 </div>
             {% endfor %}
-        </div>
+        {% else %}
+            <p class="text-center text-xl text-gray-500 mt-10">You have no items posted.</p>
+        {% endif %}
     </div>
+</div>
+
 {% endblock %}
