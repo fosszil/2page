@@ -1,3 +1,5 @@
+## This project aims to create a user-friendly platform for students to buy, sell, and exchange educational resources such as textbooks, instruments, and other study materials.
+
 # Setting up a Python Django Project
 
 ## Step 1: Create a Virtual Environment
