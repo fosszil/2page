@@ -1,4 +1,4 @@
-## This project aims to create a user-friendly platform for students to buy, sell, and exchange educational resources such as textbooks, instruments, and other study materials.
+This project aims to create a user-friendly platform for students to buy, sell, and exchange educational resources such as textbooks, instruments, and other study materials.
 
 # Setting up a Python Django Project
 
